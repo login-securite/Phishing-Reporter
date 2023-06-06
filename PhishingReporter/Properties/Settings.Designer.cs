@@ -100,5 +100,14 @@ namespace PhishingReporter.Properties {
                 this["gophish_reports_counter"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string client_trigram {
+            get {
+                return ((string)(this["client_trigram"]));
+            }
+        }
     }
 }

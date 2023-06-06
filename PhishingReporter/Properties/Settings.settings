@@ -26,5 +26,8 @@
     <Setting Name="gophish_reports_counter" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
+    <Setting Name="client_trigram" Type="System.String" Scope="Application">
+      <Value Profile="(Default)"></Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -21,7 +21,7 @@ namespace PhishingReporter
         static string GoPhishURL = PhishingReporter.Properties.Settings.Default.gophish_url + ":" + Properties.Settings.Default.gophish_listener_port;
         static string URLrequest = GoPhishURL + "/report?rid=USERID";
         static string GoPhishHeader = PhishingReporter.Properties.Settings.Default.gophish_custom_header;
-        static string WebExpID = GoPhishHeader + @": [0-9a-zA-Z]+";
+        static string WebExpID = GoPhishHeader + @": [0-9a-zA-Z]+$";
         static string WebExpPrefix = GoPhishHeader + @": ";
 
         // This function constructs GoPhish report url from a custom header in the simulated phishing campaign email

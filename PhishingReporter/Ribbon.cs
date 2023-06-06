@@ -122,7 +122,17 @@ namespace PhishingReporter
                     {
 
                         reportEmail.To = Properties.Settings.Default.infosec_email;
-                        reportEmail.Subject = (reportedItemType == "MailItem") ? "[POTENTIAL PHISH] " + mailItem.Subject : "[POTENTIAL PHISH] " + reportedItemType; // If reporting email, include subject; otherwise, state the type of the reported item
+                        reportEmail.Subject = String.Join(
+                            "|",
+                            new string[] {
+                                "3",
+                                "",
+                                "",
+                                mailItem.SenderEmailAddress,
+                                mailItem.Subject,
+                                Properties.Settings.Default.client_trigram,
+                            }
+                        );
 
                         // Get Email Headers
                         if (reportedItemType == "MailItem")

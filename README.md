@@ -38,10 +38,7 @@ If you plan to use the plugin, please fill the 3 Questions [survey](https://form
 3. From the top menu, if it is on `Debug` mode, change configuration to `Release`.
 4. In the right menu, Open `Settings.settings` and go to `Settings` Tab.
 5. From there, change:
-	- infosec_email: to your information security team.
-	- gophish_url: GoPhish instance IP/URL, if you didn't host any, you can leave the default value. The plugin will still work.
-	- gophish_listener_port: The port number of GoPhish listener.
-	- support_email: Support email to auto-report any bugs. Should be for a teammate who maintains the plugin code.
+	- `client_trigram`: should be the internal client ID trigram.
 6. Save the file.
 7. Build the project. From the top menu `Build` → `Build PhishingReporter`.
 8. In the right menu, Click `Installer` and change what you prefer on `Properties` Menu, I recommend to change:
@@ -54,5 +51,6 @@ If you plan to use the plugin, please fill the 3 Questions [survey](https://form
 11. The installer file should be located in `PhishingReporter\Installer\Release` folder.
 
 # Credits
+- 0dteam
 - Abdulla Albreiki
 - Reused some code from [NotifySecurity](https://github.com/certsocietegenerale/NotifySecurity) project by Nicolas Chaussard

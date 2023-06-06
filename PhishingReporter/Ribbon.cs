@@ -334,8 +334,6 @@ namespace PhishingReporter
             pluginDetails += "\n - Version: " + Properties.Settings.Default.plugin_version;
             pluginDetails += "\n - Usage: Report phishing emails to the Information Security Team.";
             pluginDetails += "\n - Support: " + Properties.Settings.Default.support_email;
-            // Do not delete this. I worked hard to deliver this product for FREE.
-            pluginDetails += "\n - Developer: Abdulla Albreiki (aalbraiki@hotmail.com)";
             return pluginDetails;
         }
 
